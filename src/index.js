@@ -27,6 +27,9 @@ module.exports = function check(str, bracketsConfig) {
       isCorrect = false;
     }
   });
+  if (stack.length > 0) {
+    isCorrect = false;
+  }
 
   return isCorrect;
 };
